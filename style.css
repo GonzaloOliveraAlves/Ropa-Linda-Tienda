@@ -1,0 +1,116 @@
+html {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+/* Reset some default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the header (navigation bar) */
+  header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .nav-list li {
+    margin: 0 1rem;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  /* Style for the container holding the articles */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+  }
+  
+  .post {
+    flex: 1;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style for the footer */
+  footer {
+    background-color: #f0f0f0;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  footer section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333;
+    margin: 0.25rem;
+  }
+  
+  /* Style for the "Scroll to top" link */
+  footer a:first-child {
+    margin-left: 0;
+  }
+  
+  /* Copyright text */
+  footer p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #666;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-list li {
+      margin: 0.5rem 0;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .post {
+      width: 100%;
+    }
+  
+    footer section {
+      flex-direction: column;
+    }
+  }  
